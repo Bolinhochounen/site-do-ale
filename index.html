@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>✨ Vision Board 2025 - Prosperidade e Sucesso ✨</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #000000; 
+            color: white;
+            background-image: url('https://cdn.pixabay.com/photo/2016/11/21/12/49/luxury-1846714_1280.jpg'); 
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.7);
+        }
+
+        header h1 {
+            font-size: 50px;
+            color: #FFD700; 
+            text-shadow: 2px 2px 5px black;
+        }
+
+        header p {
+            font-size: 20px;
+            color: #FFFFFF;
+        }
+
+        section {
+            margin: 50px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            box-shadow: 0 0 15px rgba(255, 215, 0, 0.5);
+        }
+
+        h2 {
+            font-size: 30px;
+            color: #FFD700; 
+            text-shadow: 2px 2px 5px black;
+        }
+
+        img {
+            border-radius: 15px;
+            margin: 10px;
+            transition: transform 0.3s;
+        }
+
+        img:hover {
+            transform: scale(1.1);
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .gallery img {
+            width: 200px;
+            height: 150px;
+            object-fit: cover;
+            border: 2px solid #FFD700;
+        }
+
+        .frases {
+            text-align: center;
+            font-size: 20px;
+            line-height: 1.8;
+        }
+
+        .frases p {
+            background: rgba(0, 0, 0, 0.6);
+            padding: 10px;
+            border-radius: 10px;
+            display: inline-block;
+        }
+
+        video {
+            width: 100%;
+            max-width: 700px;
+            border-radius: 15px;
+            margin: 20px auto;
+            display: block;
+            border: 3px solid #FFD700;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: rgba(0, 0, 0, 0.9);
+            font-size: 18px;
+            color: #FFFFFF;
+        }
+
+        .to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #FFD700;
+            color: black;
+            padding: 10px 15px;
+            border-radius: 50%;
+            font-size: 20px;
+            text-align: center;
+            cursor: pointer;
+            box-shadow: 0 0 15px rgba(255, 215, 0, 0.8);
+        }
+
+        .to-top:hover {
+            background: #FFC300;
+        }
+
+        .rain {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+        }
+
+        .rain div {
+            position: absolute;
+            top: 0;
+            font-size: 24px;
+            animation: fall 3s linear infinite;
+            color: #FFD700;
+        }
+
+        @keyframes fall {
+            to {
+                transform: translateY(100vh);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>✨ Vision Board 2025 ✨</h1>
+        <p>Concentre-se nos seus sonhos e manifeste riqueza, saúde e sucesso!</p>
+    </header>
+
+    <section>
+        <h2>💎 Visualize Sua Riqueza 💎</h2>
+        <div class="gallery">
+            <img src="https://i.pinimg.com/736x/5b/d0/0f/5bd00ffdc6298bf6871809ac229b7532.jpg" alt="Viagem" onclick="makeItRain()">
+            <img src="https://i.pinimg.com/736x/68/1e/b2/681eb2e1cd569e49751a984c5de710fc.jpg" alt="Carro de luxo" onclick="makeItRain()">
+            <img src="https://i.pinimg.com/736x/6e/1a/4b/6e1a4b0a0bc5e7982b96f3bba2b7489f.jpg" alt="Dinheiro" onclick="makeItRain()">
+        </div>
+    </section>
+
+    <div class="rain" id="rain"></div>
+
+    <section>
+        <h2>🌟 Afirmações de Poder 🌟</h2>
+        <div class="frases">
+            <p>Eu sou digno(a) de todas as riquezas do universo!</p>
+            <p>Eu atraio oportunidades incríveis todos os dias!</p>
+            <p>A abundância está fluindo para minha vida agora!</p>
+        </div>
+    </section>
+
+    <section>
+        <h2>🎥 Inspire-se com uma Playlist 🎥</h2>
+        <iframe 
+            width="100%" 
+            height="400" 
+            src="https://www.youtube.com/embed/videoseries?list=PLTqncxYK3weEAKT4jECiU68acPS1PJGaG" 
+            title="Playlist inspiradora" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+        </iframe>
+    </section>
+
+    <footer>
+        2024-2025 | Vision Board - Criado com muito ✨ por Ale.
+    </footer>
+
+    <div class="to-top" onclick="scrollToTop()">⬆️</div>
+
+    <script>
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        function makeItRain() {
+            const rainContainer = document.getElementById("rain");
+            const symbols = ['💵', '🍾', '✨', '⭐', '💎'];
+
+            for (let i = 0; i < 50; i++) {
+                const rainDrop = document.createElement("div");
+                rainDrop.innerText = symbols[Math.floor(Math.random() * symbols.length)];
+                rainDrop.style.left = `${Math.random() * 100}vw`;
+                rainDrop.style.animationDelay = `${Math.random() * 2}s`;
+                rainContainer.appendChild(rainDrop);
+
+                setTimeout(() => {
+                    rainDrop.remove();
+                }, 3000);
+            }
+        }
+    </script>
+</body>
+</html>
